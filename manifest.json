@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "YTM hide",
+    "description": "何を聴いているのか知られたくないときにおすすめの機能です。",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://music.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
